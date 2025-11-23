@@ -1,4 +1,4 @@
-package com.espaco.controle.modelo;
+package com.espaco.controle.classes;
 
 import java.io.Serializable;
 import lombok.Data;

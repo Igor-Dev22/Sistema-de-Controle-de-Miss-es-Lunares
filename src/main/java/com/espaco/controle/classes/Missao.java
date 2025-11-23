@@ -1,4 +1,4 @@
-package com.espaco.controle.modelo;
+package com.espaco.controle.classes;
 
 import java.io.Serializable;
 import lombok.Data;
@@ -22,13 +22,15 @@ public class Missao implements Serializable {
     private String nome;
     private String destino;
     private String dataLancamento; // Usando String para simplificar compatibilidade
+    private String dataRetorno;
     private boolean concluida;
     
     // Construtor personalizado
-    public Missao(String nome, String dataLancamento) {
+    public Missao(String nome, String dataLancamento, String dataRetorno) {
         this.nome = nome;
         this.destino = "Lua";
         this.dataLancamento = dataLancamento;
         this.concluida = false;
+        this.dataRetorno = dataRetorno;
     }
 }
